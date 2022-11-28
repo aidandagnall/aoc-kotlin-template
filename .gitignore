@@ -1,0 +1,9 @@
+*.txt
+!**/day00.txt
+!**/test/**/*.txt
+.vscode/
+**/.idea/*
+**/.gradle/*
+**/build/*
+*.exe
+**/.DS_Store
