@@ -58,6 +58,26 @@ Additionally, "-t" can be added to the arguments to time your solutions. e.g.
 ./gradlew run --args "-l -t"
 ```
 
+## Helpers
+
+The project contains a few helpers to make life easier, both for solving code
+and for generating project files.
+
+Firstly, a gradle task has been provided to create all of the required files
+for the *next* day of AoC. *Note: This works by looking at existing files,
+and incrementing the day number of the highest existing day.*
+
+You can run this with
+
+```bash
+./gradlew newDay
+```
+
+Additional helpers within the code allow for reading in common input types.
+Within each day, you can access the input file with the property `inputList`,
+which is a `List<String>`. Additional helpers exist for reading a list of
+integers, with `inputIntList`, or space-separated values with `inputSplitList`.
+
 ## Credits
 
 Base taken from [hughjdavey](https://github.com/hughjdavey/aoc-kotlin-starter).
